@@ -13,6 +13,7 @@
 		5FDFD5EA21903F7D00CE095D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FDFD5E921903F7D00CE095D /* Assets.xcassets */; };
 		5FDFD5ED21903F7D00CE095D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FDFD5EB21903F7D00CE095D /* LaunchScreen.storyboard */; };
 		5FDFD5F021903F7D00CE095D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDFD5EF21903F7D00CE095D /* main.m */; };
+		5FDFD5FD2190489900CE095D /* OverallSituation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDFD5FC2190489900CE095D /* OverallSituation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5FDFD5EC21903F7D00CE095D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FDFD5EE21903F7D00CE095D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FDFD5EF21903F7D00CE095D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5FDFD5FB2190489900CE095D /* OverallSituation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverallSituation.h; sourceTree = "<group>"; };
+		5FDFD5FC2190489900CE095D /* OverallSituation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverallSituation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		5FDFD5DF21903F7C00CE095D /* ImageProcessing */ = {
 			isa = PBXGroup;
 			children = (
+				5FDFD5F62190452700CE095D /* Tools */,
 				5FDFD5E021903F7C00CE095D /* AppDelegate.h */,
 				5FDFD5E121903F7C00CE095D /* AppDelegate.m */,
 				5FDFD5E321903F7C00CE095D /* ViewController.h */,
@@ -69,6 +73,23 @@
 				5FDFD5EF21903F7D00CE095D /* main.m */,
 			);
 			path = ImageProcessing;
+			sourceTree = "<group>";
+		};
+		5FDFD5F62190452700CE095D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				5FDFD5FA2190482A00CE095D /* SystemConfig */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5FDFD5FA2190482A00CE095D /* SystemConfig */ = {
+			isa = PBXGroup;
+			children = (
+				5FDFD5FB2190489900CE095D /* OverallSituation.h */,
+				5FDFD5FC2190489900CE095D /* OverallSituation.m */,
+			);
+			path = SystemConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +164,7 @@
 			files = (
 				5FDFD5E521903F7C00CE095D /* ViewController.m in Sources */,
 				5FDFD5F021903F7D00CE095D /* main.m in Sources */,
+				5FDFD5FD2190489900CE095D /* OverallSituation.m in Sources */,
 				5FDFD5E221903F7C00CE095D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,13 +310,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JYRL84HER3;
 				INFOPLIST_FILE = ImageProcessing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AR.gc.nav.ImageProcessing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,13 +328,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JYRL84HER3;
 				INFOPLIST_FILE = ImageProcessing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AR.gc.nav.ImageProcessing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
